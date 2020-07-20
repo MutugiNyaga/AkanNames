@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="icon" href="./images/logo.svg" style="width: max-content; height: max-content ;" >
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Ubuntu:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+
+    <title>Akan</title>
+    
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <nav class="navbar navbar-dark bg-transparenet">
+                <a class="navbar-brand" href="#">
+                    <img src="images/logo.svg" alt="logo">
+                </a>
+                
+                <span class="navbar-text lg-none d-sm-inline-block">Home</span>
+            </nav>
+        </div>
+    </header>
+
+
+<main>
+<div class="container">
+            <h1 class="title">Akan Name Generator</h1>
+            <p class="description">The creative web application that makes things fun for the curious;<br>
+                the web application takes a user's birthday and calculates the day of the week they were born and then depending on their gender outputs their Akan Name.<hr> 
+                </p>
+            </p>
+</div>
+
+<div class="container">
+    
+        <form class="generator">
+            <h3 class="font-weight-normal">Generate Your Akan Name</h3>
+            
+             <label for="inputDay" class="sr-only">Day</label>                               
+            <input type="number" id="day" class="form-control" value="" placeholder="Day" min="1" max="31" required>
+                  
+            <label for="inputMonth" class="sr-only">Month</label>
+            <input type="number" id="month" class="form-control" value="" placeholder="Month" min="1" max="12" required>
+                  
+            <label for="inputYear" class="sr-only">Year</label>
+            <input type="number" id="year" class="form-control" placeholder="Year" required>
+                  
+            <div class="radio">
+            <label>
+                <input type="radio" id="male" name="gender" value="male">Male 
+                <input type="radio" id="female" name="gender" value="female">Female
+            
+            </label>
+            </div>
+            <button class="btn btn-lg btn-success btn-block" onclick="getInfo()" type="submit" id="submit">Generate</button>
+            <p class="mt-5 mb-3 text">&copy; 2020 | kelmut19@gmail.com  </p>
+
+            </form>  
+                <hr>
+                
+            
+</div>
+           
+    </main>
+
+
+
+<!--my javascript-->
+<script src="./script.js"></script>
+
+<!--Bootstrap cdn links-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
